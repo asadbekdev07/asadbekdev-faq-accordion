@@ -108,12 +108,13 @@ select:-webkit-autofill:focus {
   top: 160px;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 160px;
   margin: auto;
   padding: 36px;
   border-radius: 15px;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1019607843);
   max-width: 600px;
+  min-height: 450px;
   background-color: #ffffff;
 }
 
@@ -137,13 +138,20 @@ select:-webkit-autofill:focus {
 
 .accordion__item-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  color: #2f1533;
+  transition: color 0.3s ease;
+}
+.accordion__item-header:active {
+  color: #8c6991;
 }
 
 .accordion__item-title {
   margin-top: 0;
   margin-bottom: 10px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .accordion__item-toggler {

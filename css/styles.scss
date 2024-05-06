@@ -134,12 +134,13 @@ select:-webkit-autofill:focus {
   top: 160px;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 160px;
   margin: auto;
   padding: 36px;
   border-radius: 15px;
   box-shadow: 0 30px 60px #0000001a;
   max-width: 600px;
+  min-height: 450px;
   background-color: $color-white;
 }
 .card__title {
@@ -163,13 +164,22 @@ select:-webkit-autofill:focus {
 
 .accordion__item-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  color: $color-dark-purple;
+  transition: color 0.3s ease;
+
+  &:active {
+    color: $color-grayish-purple;
+    }
 }
 .accordion__item-title {
   margin-top: 0;
   margin-bottom: 10px;
   margin-right: 10px;
+  cursor: pointer;
 }
+
 .accordion__item-toggler {
   border: 0;
   background-color: $color-white;

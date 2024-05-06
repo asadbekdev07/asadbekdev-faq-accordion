@@ -1,16 +1,8 @@
 // VARIABLES
 $color-white: #ffffff;
-$color-light-pink: #f9f0ff;
 $color-grayish-purple: #8c6991;
 $color-dark-purple: #2f1533;
 $font-family: "Work Sans", "Arial", sans-serif;
-
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* FONT-FACE */
 
 @font-face {
@@ -113,17 +105,6 @@ select:-webkit-autofill:focus {
   overflow: hidden;
 }
 
-
-/* CONTAINER  */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* MAIN-CONTENT  */
 .main-content {
   flex-grow: 1;
@@ -147,6 +128,7 @@ select:-webkit-autofill:focus {
   margin: 0;
   margin-bottom: 20px;
   font-size: 56px;
+  font-weight: 700;
 }
 
 .accordion__item {
@@ -177,6 +159,7 @@ select:-webkit-autofill:focus {
   margin-top: 0;
   margin-bottom: 10px;
   margin-right: 10px;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -193,4 +176,5 @@ select:-webkit-autofill:focus {
 .accordion__item-text {
   margin: 0;
   font-size: 16px;
+  font-weight: 400;
 }

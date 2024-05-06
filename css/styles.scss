@@ -3,6 +3,7 @@ $color-white: #ffffff;
 $color-light-pink: #f9f0ff;
 $color-grayish-purple: #8c6991;
 $color-dark-purple: #2f1533;
+$font-family: "Work Sans", "Arial", sans-serif;
 
 @mixin flex-center {
   display: flex;
@@ -59,10 +60,14 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: $font-family;
   font-size: 16px;
   background-color: $color-white  ;
   color: $color-dark-purple;
+  background-image: url("../images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
 }
 
 img {
